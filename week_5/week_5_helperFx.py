@@ -5,8 +5,6 @@ from sklearn.datasets import make_classification
 
 
 
-
-
 class Create_MDD:
     
     def __init__(self, n_m, n_f):
@@ -101,7 +99,7 @@ class Create_GAD:
         
         self.create_bin_var('access_to_care', .025, .125)
         self.create_cont_var('food_insecure', 2.2, -1.2, 1, 1.25)
-        self.create_cont_var('neighb_violence', 228, 145, 20, 45)
+        self.create_cont_var('housing_stability', 228, 145, 20, 45)
 
         #self.create_bin_var('take_off', .017, .100)
         self.to_dframe()
